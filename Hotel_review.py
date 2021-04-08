@@ -1,6 +1,8 @@
 import streamlit as st 
 import numpy as np 
 import pandas as pd
+import nltk
+nltk.download('stopwords')
 # import matplotlib.pyplot as plt
 # import string
 import re #for text process
