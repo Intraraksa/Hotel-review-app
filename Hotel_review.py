@@ -1,22 +1,22 @@
 import streamlit as st 
 import numpy as np 
 import pandas as pd
-import matplotlib.pyplot as plt
+# import matplotlib.pyplot as plt
 # import string
 import re #for text process
 from nltk.corpus import stopwords
 from nltk.stem import WordNetLemmatizer
-from PIL import Image
+# from PIL import Image
 from sklearn.feature_extraction.text import CountVectorizer
 from sklearn.model_selection import train_test_split
 from sklearn.naive_bayes import MultinomialNB
 import pickle
 
-img1 = Image.open('./data/Hotel_review/like-dislike-featured.jpg')
-img2 = Image.open('./data/Hotel_review/rating-star.jpg')
+# img1 = Image.open('./data/Hotel_review/like-dislike-featured.jpg')
+# img2 = Image.open('./data/Hotel_review/rating-star.jpg')
 
-img1 = img1.resize((300,300))
-img2 = img2.resize((300,300))
+# img1 = img1.resize((300,300))
+# img2 = img2.resize((300,300))
 
 st.header('Hotel review sentiment analysis')
 st.image('./data/Hotel_review/review.jpg')
